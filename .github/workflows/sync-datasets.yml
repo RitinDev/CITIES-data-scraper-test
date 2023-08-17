@@ -23,7 +23,7 @@ jobs:
           npm install googleapis
 
       - name: Run Sync Script
-        run: node sync_script.js
+        run: node sync.js
 
       - name: Commit and Push if changes
         run: |
