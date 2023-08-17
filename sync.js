@@ -1,50 +1,50 @@
+const { google } = require('googleapis');
+const fetch = require('node-fetch');
 const fs = require('fs');
-const axios = require('axios');
-const { GoogleSpreadsheet } = require('google-spreadsheet');
+const path = require('path');
 
-// Configuration constants
 const REPO_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
 
-async function fetchDatabase() {
-    try {
-        const response = await axios.get(REPO_URL);
-        return response.data;
-    } catch (error) {
-        console.error('Error fetching the temp_database.json:', error);
-        throw error;
-    }
+async function fetchProjects() {
+  const response = await fetch(REPO_URL);
+  if (!response.ok) {
+    throw new Error('Failed to fetch projects JSON');
+  }
+  return await response.json();
 }
 
-async function fetchDataFromSheet(sheetId, gid) {
-    // Initialize the sheets API client
-    const doc = new GoogleSpreadsheet(sheetId);
-    await doc.useServiceAccountAuth(JSON.parse(process.env.GOOGLE_SHEETS_CREDS));
-    await doc.loadInfo();
+async function authenticate() {
+  const jwt = new google.auth.JWT(
+    process.env.GOOGLE_CLIENT_EMAIL,
+    null,
+    process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'), 
+    ['https://www.googleapis.com/auth/spreadsheets']
+  );
+  await jwt.authorize();
+  return jwt;
+}
 
-    // Assume that the sheet's title can be fetched using the gid.
-    const sheet = doc.sheetsById[gid];
-    const rows = await sheet.getRows();
-    return rows.map(row => row._rawData);
+async function fetchDataFromSheet(jwt, spreadsheetId, gid) {
+  const sheets = google.sheets({ version: 'v4', auth: jwt });
+  const { data } = await sheets.spreadsheets.values.get({
+    spreadsheetId: spreadsheetId,
+    range: `'${gid}'!A:Z`, 
+  });
+  return data.values;
 }
 
 (async () => {
-    try {
-        const database = await fetchDatabase();
+  try {
+    const projects = await fetchProjects();
+    
+    const jwt = await authenticate();
 
-        for (const project of database) {
-            if (project.rawDataTables) {
-                for (const dataset of project.rawDataTables) {
-                    const data = await fetchDataFromSheet(project.sheetId, dataset.gid);
-                    const csv = data.map(row => row.join(',')).join('\n');
-
-                    // Save the CSV to a file.
-                    // You can further enhance this to save in desired directories or filenames
-                    fs.writeFileSync(`./${project.id}-${dataset.gid}.csv`, csv);
-                }
-            }
-        }
-
-    } catch (error) {
-        console.error('Error:', error);
+    for (let project of projects) {
+      // Continue with your logic to handle each project's data...
+      const data = await fetchDataFromSheet(jwt, project.sheetId, project.gid);
+      // Continue with your logic to save each dataset to your repo...
     }
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
 })();
