@@ -14,6 +14,7 @@ async function fetchProjects() {
 }
 
 async function authenticate() {
+    console.log(process.env.GOOGLE_SHEETS_CREDS)
     const jwt = new google.auth.JWT(
         process.env.GOOGLE_SHEETS_CREDS.client_email,
         null,
