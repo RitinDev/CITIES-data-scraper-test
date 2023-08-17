@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const { google } = require('googleapis');
 
-const SHEETS_API_KEY = process.env.SHEETS_API_KEY; // Ensure you set this as a secret in your GitHub repo
+const SHEETS_API_KEY = 'AIzaSyCjVRS9swFZFN8FQq9ChM0FHWb_kRc0LCI'; // Ensure you set this as a secret in your GitHub repo
 const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
 
 const fetchDataFromGithub = async () => {
