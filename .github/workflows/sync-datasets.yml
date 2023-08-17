@@ -25,6 +25,8 @@ jobs:
     - name: Fetch and sync datasets
       run: |
         node sync.js
+      env: |
+        GOOGLE_SHEETS_CREDS: ${{ secrets.GOOGLE_SHEETS_CREDS }}
 
     # - name: Generate metadata
     #   run: |
