@@ -1,39 +1,39 @@
-name: Sync Google Sheets Data to Repository
+name: Sync Datasets
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # This runs the action every day at midnight UTC
-  workflow_dispatch:  # Allows manual triggering of the workflow from GitHub UI
+    - cron: '0 0 * * *'  # This will run the workflow daily at midnight.
+  workflow_dispatch:  # This allows you to run the workflow manually from the Actions tab.
 
 jobs:
-  sync-data:
-    name: Sync Data from Google Sheets
+  sync:
     runs-on: ubuntu-latest
-    
     steps:
+    
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: Use Node.js
+      
+    - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
-
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Run Sync Script
-      run: node sync.js
-      env:
-        GOOGLE_SHEETS_CREDS: ${{ secrets.GOOGLE_SHEETS_CREDS }}
-
-    - name: Setup Git User
+        node-version: '14' # You can specify another version if needed
+      
+    - name: Install dependencies
       run: |
-        git config user.name "GitHub Actions Bot"
-        git config user.email "actions@github.com"
-        
-    - name: Commit and Push Changes
+        npm install axios googleapis fs path
+
+    - name: Fetch and sync datasets
       run: |
+        node sync.js
+
+    # - name: Generate metadata
+    #   run: |
+    #     node metadata.js
+      
+    - name: Commit and push if there are changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add -A
-        git commit -m "Updated datasets from Google Sheets" || echo "No changes to commit"
+        git commit -m "Sync datasets and update metadata" || echo "No changes to commit"
         git push
