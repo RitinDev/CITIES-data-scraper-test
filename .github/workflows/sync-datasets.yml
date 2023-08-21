@@ -24,6 +24,8 @@ jobs:
 
       - name: Run Sync Script
         run: node sync.js
+        env:
+          SHEETS_NEW_API_KEY: ${{ secrets.SHEETS_NEW_API_KEY }}
 
       - name: Commit and Push if changes
         run: |
