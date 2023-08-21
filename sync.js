@@ -99,7 +99,7 @@ const main = async (apiKey, databaseUrl) => {
     }
 };
 
-const SHEETS_API_KEY = 'AIzaSyDGssKkx6LGQ1EmD6voR9kSzrOi5d80T2I';
+const SHEETS_API_KEY = process.env.SHEETS_NEW_API_KEY;
 const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
 main(SHEETS_API_KEY, TEMP_DATABASE_URL).catch(console.error);
 
