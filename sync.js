@@ -79,10 +79,10 @@ const main = async (apiKey, databaseUrl) => {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
             const csvData = arrayToCSV(data);
             if (!sheetName) {
-                saveDataToCSV(csvData, `${projectPath}/${project.id}-${dataset.gid}.csv`);
+                saveDataToCSV(csvData, `${projectPath}/${project.id}-data.csv`);
             } else {
                 const sanitizedSheetName = sheetName.replace(/[^a-zA-Z0-9-_]/g, "_");  // To ensure the sheet name doesn't contain invalid characters for filenames
-                saveDataToCSV(csvData, `${projectPath}/${project.id}-${sanitizedSheetName}-${dataset.gid}.csv`);
+                saveDataToCSV(csvData, `${projectPath}/${project.id}-${sanitizedSheetName}.csv`);
             }
         }
         // Metadata logic here
