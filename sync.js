@@ -81,9 +81,10 @@ const main = async (apiKey, databaseUrl) => {
     }
 
     for (const project of database) {
+        // Skip projects with no public datasets
         if (!project.rawDataTables ||
             project.rawDataTables.length === 0 ||
-            Object.keys(project.rawDataTables[0]).length === 0) continue;  // Skip projects with no public datasets
+            Object.keys(project.rawDataTables[0]).length === 0) continue;
 
         const projectPath = `./${project.id}`;
         if (!fs.existsSync(projectPath)) {
@@ -126,7 +127,7 @@ const main = async (apiKey, databaseUrl) => {
                 existingMetadata.lastModified = new Date().toISOString().split('T')[0];
             }
 
-            existingMetadata.size = size;
+            existingMetadata.size = size + " KB";
         }
 
         metadata[project.id] = projectMetadata;
