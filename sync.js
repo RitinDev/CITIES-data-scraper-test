@@ -66,8 +66,24 @@ const saveDataToCSV = (data, path) => {
     }
 };
 
+const getCSVFileSize = (path) => {
+    try {
+        const stats = fs.statSync(path);
+        return stats.size; // returns in bytes
+    } catch (error) {
+        console.error(`Error getting size for ${path}: ${error.message}`);
+        return 0;
+    }
+};
+
 const main = async (apiKey, databaseUrl) => {
     const database = await fetchDataFromGithub(databaseUrl);
+    let metadata = {};
+
+    // Load the existing metadata
+    if (fs.existsSync('./datasets_metadata.json')) {
+        metadata = JSON.parse(fs.readFileSync('./datasets_metadata.json', 'utf-8'));
+    }
 
     for (const project of database) {
         const projectPath = `./${project.id}`;
@@ -75,28 +91,47 @@ const main = async (apiKey, databaseUrl) => {
             fs.mkdirSync(projectPath);
         }
 
+        metadata[project.id] = metadata[project.id] || [];
         for (const dataset of project.rawDataTables) {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
             const csvData = arrayToCSV(data);
-            if (!sheetName) {
-                saveDataToCSV(csvData, `${projectPath}/${project.id}-data.csv`);
-            } else {
-                const sanitizedSheetName = sheetName.replace(/[^a-zA-Z0-9-_]/g, "_");  // To ensure the sheet name doesn't contain invalid characters for filenames
-                saveDataToCSV(csvData, `${projectPath}/${project.id}-${sanitizedSheetName}.csv`);
-            }
-        }
-        // Metadata logic here
-        // Create a file metadata.json and write the metadata for each sheet to it
-        // const metadata = {
-        //     id: project.id,
-        //     name: project.name,
-        //     description: project.description,
-        //     rawDataTables: project.rawDataTables,
-        //     metadataTables: project.metadataTables,
-        // };
-        // saveDataToCSV(JSON.stringify(metadata), `${projectPath}/metadata.json`);
+            let fileName;
 
+            if (!sheetName) {
+                fileName = `${project.id}-data.csv`;
+            } else {
+                const sanitizedSheetName = sheetName.replace(/[^a-zA-Z0-9-_]/g, "_");
+                fileName = `${project.id}-${sanitizedSheetName}.csv`;
+            }
+
+            const filePath = `${projectPath}/${fileName}`;
+            const oldData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : null;
+            saveDataToCSV(csvData, filePath);
+
+            const rawLink = `https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/${project.id}/${fileName}`;
+            const size = getCSVFileSize(filePath);
+
+            let existingMetadata = metadata[project.id].find(md => md.rawLink === rawLink);
+            if (!existingMetadata) {
+                existingMetadata = {
+                    rawLink,
+                    lastModified: new Date().toISOString(), // Default value if it's a new dataset
+                    size
+                };
+                metadata[project.id].push(existingMetadata);
+            }
+
+            // Update the lastModified only if there's a change in the data
+            if (oldData !== csvData) {
+                existingMetadata.lastModified = new Date().toISOString();
+            }
+
+            existingMetadata.size = size;
+        }
     }
+
+    // Save metadata to JSON
+    fs.writeFileSync('./datasets_metadata.json', JSON.stringify(metadata, null, 2));
 };
 
 const SHEETS_API_KEY = process.env.SHEETS_NEW_API_KEY;
