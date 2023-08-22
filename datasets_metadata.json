@@ -1,0 +1,61 @@
+{
+  "air-quality": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/air-quality/air-quality-Daily.csv",
+      "lastModified": "2023-08-22T13:36:19.405Z",
+      "size": 59268
+    }
+  ],
+  "athletics-fabs-membership": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/athletics-fabs-membership/athletics-fabs-membership-Raw_Data.csv",
+      "lastModified": "2023-08-22T13:36:20.118Z",
+      "size": 547
+    }
+  ],
+  "athletic-facilities-check-in": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/athletic-facilities-check-in/athletic-facilities-check-in-_Update_here__by_Hour.csv",
+      "lastModified": "2023-08-22T13:38:38.055Z",
+      "size": 265
+    },
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/athletic-facilities-check-in/athletic-facilities-check-in-_Update_here__by_Day.csv",
+      "lastModified": "2023-08-22T13:38:38.425Z",
+      "size": 123
+    },
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/athletic-facilities-check-in/athletic-facilities-check-in-_Update_here__by_Month.csv",
+      "lastModified": "2023-08-22T13:38:38.761Z",
+      "size": 255
+    }
+  ],
+  "food-waste": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/food-waste/food-waste-Formatted_Data.csv",
+      "lastModified": "2023-08-22T13:38:40.233Z",
+      "size": 213894
+    }
+  ],
+  "student-population": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/student-population/student-population-Raw_Data.csv",
+      "lastModified": "2023-08-22T13:38:40.848Z",
+      "size": 2329
+    }
+  ],
+  "noise-pollution": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/noise-pollution/noise-pollution-data.csv",
+      "lastModified": "2023-08-22T13:38:40.894Z",
+      "size": 0
+    }
+  ],
+  "weather": [
+    {
+      "rawLink": "https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/weather/weather-data.csv",
+      "lastModified": "2023-08-22T13:38:40.944Z",
+      "size": 0
+    }
+  ]
+}
