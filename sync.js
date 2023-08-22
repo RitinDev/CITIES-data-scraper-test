@@ -66,14 +66,9 @@ const saveDataToCSV = (data, path) => {
     }
 };
 
-const getCSVFileSize = (path) => {
-    try {
-        const stats = fs.statSync(path);
-        return stats.size; // returns in bytes
-    } catch (error) {
-        console.error(`Error getting size for ${path}: ${error.message}`);
-        return 0;
-    }
+const getCSVFileSize = (filePath) => {
+    const stats = fs.statSync(filePath);
+    return (stats.size / 1024).toFixed(2); // Size in kilobytes with 2 decimal places
 };
 
 const main = async (apiKey, databaseUrl) => {
@@ -86,12 +81,14 @@ const main = async (apiKey, databaseUrl) => {
     }
 
     for (const project of database) {
+        if (!project.rawDataTables || project.rawDataTables.length === 0) continue;  // Skip projects with no public datasets
+
         const projectPath = `./${project.id}`;
         if (!fs.existsSync(projectPath)) {
             fs.mkdirSync(projectPath);
         }
 
-        metadata[project.id] = metadata[project.id] || [];
+        const projectMetadata = {};
         for (const dataset of project.rawDataTables) {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
             const csvData = arrayToCSV(data);
@@ -111,23 +108,26 @@ const main = async (apiKey, databaseUrl) => {
             const rawLink = `https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/${project.id}/${fileName}`;
             const size = getCSVFileSize(filePath);
 
-            let existingMetadata = metadata[project.id].find(md => md.rawLink === rawLink);
+            let sheetTitle = sheetName || "data";
+            let existingMetadata = projectMetadata[sheetTitle];
             if (!existingMetadata) {
                 existingMetadata = {
                     rawLink,
-                    lastModified: new Date().toISOString(), // Default value if it's a new dataset
+                    lastModified: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
                     size
                 };
-                metadata[project.id].push(existingMetadata);
+                projectMetadata[sheetTitle] = existingMetadata;
             }
 
             // Update the lastModified only if there's a change in the data
             if (oldData !== csvData) {
-                existingMetadata.lastModified = new Date().toISOString();
+                existingMetadata.lastModified = new Date().toISOString().split('T')[0];
             }
 
             existingMetadata.size = size;
         }
+
+        metadata[project.id] = projectMetadata;
     }
 
     // Save metadata to JSON
