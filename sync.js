@@ -91,7 +91,8 @@ const main = async (apiKey, databaseUrl) => {
             fs.mkdirSync(projectPath);
         }
 
-        const projectMetadata = {};
+        const projectMetadata = metadata[project.id] || {};
+
         for (const dataset of project.rawDataTables) {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
             const csvData = arrayToCSV(data);
@@ -106,34 +107,30 @@ const main = async (apiKey, databaseUrl) => {
             }
 
             const filePath = `${projectPath}/${fileName}`;
-            const oldData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : null;
             saveDataToCSV(csvData, filePath);
 
             const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
             const size = getCSVFileSize(filePath);
 
-            let existingMetadata = projectMetadata[dataset.gid];
-            if (!existingMetadata) {
-                existingMetadata = {
-                    name: sanitizedSheetName,
-                    rawLink,
-                    lastModified: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                    size
-                };
-                projectMetadata[dataset.gid] = existingMetadata;
+            const currentVersion = {
+                name: sanitizedSheetName,
+                rawLink,
+                dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
+                size: size + " KB"
+            };
+
+            const datasetVersions = projectMetadata[dataset.gid] || [];
+
+            // Check if this version exists already, if not, append to the dataset versions
+            if (!datasetVersions.some(version => version.rawLink === currentVersion.rawLink)) {
+                datasetVersions.push(currentVersion);
             }
 
-            // Update the lastModified only if there's a change in the data
-            if (oldData !== csvData) {
-                existingMetadata.lastModified = new Date().toISOString().split('T')[0];
-            }
-
-            existingMetadata.size = size + " KB";
+            projectMetadata[dataset.gid] = datasetVersions;  // Update or set the dataset versions
         }
 
         metadata[project.id] = projectMetadata;
     }
-
 
     // Save metadata to JSON
     fs.writeFileSync('./datasets_metadata.json', JSON.stringify(metadata, null, 2));
@@ -142,4 +139,3 @@ const main = async (apiKey, databaseUrl) => {
 const SHEETS_API_KEY = process.env.SHEETS_NEW_API_KEY;
 const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
 main(SHEETS_API_KEY, TEMP_DATABASE_URL).catch(console.error);
-
