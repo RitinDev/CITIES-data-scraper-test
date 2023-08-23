@@ -95,31 +95,32 @@ const main = async (apiKey, databaseUrl) => {
         for (const dataset of project.rawDataTables) {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
             const csvData = arrayToCSV(data);
-            let fileName;
 
-            if (!sheetName) {
-                fileName = `${project.id}-data.csv`;
-            } else {
-                const sanitizedSheetName = sheetName.replace(/[^a-zA-Z0-9-_]/g, "_");
+            let fileName;
+            let sanitizedSheetName = "data"; // default
+            if (sheetName) {
+                sanitizedSheetName = sheetName.toLowerCase().replace(/ /g, "-").replace(/[^a-z0-9-]/g, "_");
                 fileName = `${project.id}-${sanitizedSheetName}.csv`;
+            } else {
+                fileName = `${project.id}-data.csv`;
             }
 
             const filePath = `${projectPath}/${fileName}`;
             const oldData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : null;
             saveDataToCSV(csvData, filePath);
 
-            const rawLink = `https://github.com/RitinDev/CITIES-data-scraper-test/blob/main/${project.id}/${fileName}`;
+            const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
             const size = getCSVFileSize(filePath);
 
-            let sheetTitle = sheetName || "data";
-            let existingMetadata = projectMetadata[sheetTitle];
+            let existingMetadata = projectMetadata[dataset.gid];
             if (!existingMetadata) {
                 existingMetadata = {
+                    name: sanitizedSheetName,
                     rawLink,
                     lastModified: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
                     size
                 };
-                projectMetadata[sheetTitle] = existingMetadata;
+                projectMetadata[dataset.gid] = existingMetadata;
             }
 
             // Update the lastModified only if there's a change in the data
@@ -132,6 +133,7 @@ const main = async (apiKey, databaseUrl) => {
 
         metadata[project.id] = projectMetadata;
     }
+
 
     // Save metadata to JSON
     fs.writeFileSync('./datasets_metadata.json', JSON.stringify(metadata, null, 2));
