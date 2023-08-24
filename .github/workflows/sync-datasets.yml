@@ -26,6 +26,7 @@ jobs:
         run: node sync.js
         env:
           SHEETS_NEW_API_KEY: ${{ secrets.SHEETS_NEW_API_KEY }}
+          CURRENT_COMMIT: ${{ github.sha }} # This provides the current commit hash
 
       - name: Commit and Push if changes
         run: |

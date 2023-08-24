@@ -66,7 +66,7 @@ const getCSVFileSize = (filePath) => {
     return (stats.size / 1024).toFixed(2); // Size in kilobytes with 2 decimal places
 };
 
-const main = async (apiKey, databaseUrl) => {
+const main = async (apiKey, databaseUrl, currentCommit) => {
     const database = await fetchDataFromGithub(databaseUrl);
     let metadata = {};
 
@@ -107,16 +107,22 @@ const main = async (apiKey, databaseUrl) => {
             if (oldHash !== newHash) {
                 fs.writeFileSync(filePath, csvData);
 
-                const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
+                const rawLinkLatest = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
+                const currentCommitRawLink = `https://github.com/RitinDev/CITIES-data-scraper-test/blob/${currentCommit}/${project.id}/${fileName}`;
                 const size = getCSVFileSize(filePath);
                 const currentVersion = {
                     name: sanitizedSheetName,
-                    rawLink,
+                    rawLinkLatest,
                     dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
                     size: size + " KB"
                 };
 
                 const datasetVersions = projectMetadata[dataset.gid] || [];
+
+                // If there is a previous version, update its rawLink to include the commit hash
+                if (datasetVersions.length > 0) {
+                    datasetVersions[datasetVersions.length - 1].rawLink = currentCommitRawLink;
+                }
                 datasetVersions.push(currentVersion);
 
                 projectMetadata[dataset.gid] = datasetVersions;
@@ -131,4 +137,5 @@ const main = async (apiKey, databaseUrl) => {
 
 const SHEETS_API_KEY = process.env.SHEETS_NEW_API_KEY;
 const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
-main(SHEETS_API_KEY, TEMP_DATABASE_URL).catch(console.error);
+const CURRENT_COMMIT_HASH = process.env.CURRENT_COMMIT;
+main(SHEETS_API_KEY, TEMP_DATABASE_URL, CURRENT_COMMIT_HASH).catch(console.error);
