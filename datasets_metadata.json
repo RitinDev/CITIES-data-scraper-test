@@ -1,0 +1,75 @@
+{
+  "air-quality": {
+    "584789045": [
+      {
+        "name": "daily",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+        "dateCreated": "2023-08-24",
+        "size": "58.03 KB",
+        "hash": "8c581f216e49b7d957808bc37fb97d09c554a42f3cb7a3444521f26c2bbdebd1"
+      }
+    ]
+  },
+  "athletics-fabs-membership": {
+    "560722866": [
+      {
+        "name": "raw-data",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-data.csv",
+        "dateCreated": "2023-08-24",
+        "size": "0.54 KB",
+        "hash": "685e63c983600ae8baa368254bb00fa809470465e4af272fda76fd0c54596575"
+      }
+    ]
+  },
+  "athletic-facilities-check-in": {
+    "30903651": [
+      {
+        "name": "_update-here_-by-month",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
+        "dateCreated": "2023-08-24",
+        "size": "0.24 KB",
+        "hash": "cb3d8af4a1634a554fd6b7eb0afb718491a97890d95bc75429fb6d7e996d6458"
+      }
+    ],
+    "948552227": [
+      {
+        "name": "_update-here_-by-day",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-day.csv",
+        "dateCreated": "2023-08-24",
+        "size": "0.12 KB",
+        "hash": "20ad3a9c7bde77ea710ce2cb2ccc095c061edf6dc9d53d0b529fdec561fe6e99"
+      }
+    ],
+    "1993454060": [
+      {
+        "name": "_update-here_-by-hour",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-hour.csv",
+        "dateCreated": "2023-08-24",
+        "size": "0.26 KB",
+        "hash": "e256f2267cf7250ba8945117e7818dbbe560f5633928eb9b58684645fe33ab66"
+      }
+    ]
+  },
+  "food-waste": {
+    "1952244844": [
+      {
+        "name": "formatted-data",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-formatted-data.csv",
+        "dateCreated": "2023-08-24",
+        "size": "208.88 KB",
+        "hash": "760e321cb09256933ab354460c441de41e32d58591b7f3be23e840a91b3db87e"
+      }
+    ]
+  },
+  "student-population": {
+    "1622588326": [
+      {
+        "name": "raw-data",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/student-population/student-population-raw-data.csv",
+        "dateCreated": "2023-08-24",
+        "size": "2.27 KB",
+        "hash": "a1be96e25a89619a1a76846797d7e63624b02abc9e648f7b935445eee6992be3"
+      }
+    ]
+  }
+}
