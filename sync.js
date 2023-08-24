@@ -55,15 +55,10 @@ const arrayToCSV = (data) => {
     return data.map(row => row.join(',')).join('\n');
 };
 
-const saveDataToCSV = (data, path) => {
-    if (data.length === 0) {
-        console.warn(`No data to write to ${path}`);
-        return;
-    }
-
-    if (!fs.existsSync(path) || fs.readFileSync(path, 'utf-8') !== data) {
-        fs.writeFileSync(path, data);
-    }
+const computeHash = (data) => {
+    const hash = crypto.createHash('sha256');
+    hash.update(data);
+    return hash.digest('hex');
 };
 
 const getCSVFileSize = (filePath) => {
@@ -71,23 +66,15 @@ const getCSVFileSize = (filePath) => {
     return (stats.size / 1024).toFixed(2); // Size in kilobytes with 2 decimal places
 };
 
-const computeHash = (data) => {
-    const hash = crypto.createHash('sha256');
-    hash.update(data);
-    return hash.digest('hex');
-};
-
 const main = async (apiKey, databaseUrl) => {
     const database = await fetchDataFromGithub(databaseUrl);
     let metadata = {};
 
-    // Load the existing metadata
     if (fs.existsSync('./datasets_metadata.json')) {
         metadata = JSON.parse(fs.readFileSync('./datasets_metadata.json', 'utf-8'));
     }
 
     for (const project of database) {
-        // Skip projects with no public datasets
         if (!project.rawDataTables ||
             project.rawDataTables.length === 0 ||
             Object.keys(project.rawDataTables[0]).length === 0) continue;
@@ -113,34 +100,32 @@ const main = async (apiKey, databaseUrl) => {
             }
 
             const filePath = `${projectPath}/${fileName}`;
-            saveDataToCSV(csvData, filePath);
+            const oldCSVData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : "";
+            const oldHash = computeHash(oldCSVData);
+            const newHash = computeHash(csvData);
 
-            const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
-            const size = getCSVFileSize(filePath);
+            if (oldHash !== newHash) {
+                fs.writeFileSync(filePath, csvData);
 
-            const currentHash = computeHash(csvData);
-            const currentVersion = {
-                name: sanitizedSheetName,
-                rawLink,
-                dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                size: size + " KB",
-                hash: currentHash
-            };
+                const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
+                const size = getCSVFileSize(filePath);
+                const currentVersion = {
+                    name: sanitizedSheetName,
+                    rawLink,
+                    dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
+                    size: size + " KB"
+                };
 
-            const datasetVersions = projectMetadata[dataset.gid] || [];
-
-            // Check if this hash exists already for any version
-            if (!datasetVersions.some(version => version.hash === currentHash)) {
+                const datasetVersions = projectMetadata[dataset.gid] || [];
                 datasetVersions.push(currentVersion);
-            }
 
-            projectMetadata[dataset.gid] = datasetVersions;  // Update or set the dataset versions
+                projectMetadata[dataset.gid] = datasetVersions;
+            }
         }
 
         metadata[project.id] = projectMetadata;
     }
 
-    // Save metadata to JSON
     fs.writeFileSync('./datasets_metadata.json', JSON.stringify(metadata, null, 2));
 };
 
