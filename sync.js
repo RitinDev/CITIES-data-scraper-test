@@ -108,7 +108,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 fs.writeFileSync(filePath, csvData);
 
                 const rawLinkLatest = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
-                const currentCommitRawLink = `https://github.com/RitinDev/CITIES-data-scraper-test/blob/${currentCommit}/${project.id}/${fileName}`;
+                const currentCommitRawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/${currentCommit}/${project.id}/${fileName}`;
                 const size = getCSVFileSize(filePath);
                 const currentVersion = {
                     name: sanitizedSheetName,
@@ -121,9 +121,9 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
 
                 // If there is a previous version, update its rawLink to include the commit hash
                 if (datasetVersions.length > 0) {
-                    datasetVersions[datasetVersions.length - 1].rawLink = currentCommitRawLink;
+                    datasetVersions[0].rawLink = currentCommitRawLink;
                 }
-                datasetVersions.push(currentVersion);
+                datasetVersions.unshift(currentVersion);
 
                 projectMetadata[dataset.gid] = datasetVersions;
             }
