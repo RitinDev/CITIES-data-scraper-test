@@ -104,12 +104,6 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             const oldHash = computeHash(oldCSVData);
             const newHash = computeHash(csvData);
 
-            console.log(`[${project.id}] ${fileName} - ${oldHash} vs ${newHash}`);
-            // Print last 5 lines of the CSV file
-            console.log(oldCSVData.split('\n').slice(-5).join('\n'));
-            console.log('---');
-            console.log(csvData.split('\n').slice(-5).join('\n'));
-
             if (oldHash !== newHash) {
                 fs.writeFileSync(filePath, csvData);
 
