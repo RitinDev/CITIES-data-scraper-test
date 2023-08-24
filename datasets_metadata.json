@@ -5,6 +5,12 @@
         "name": "daily",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
         "version": "2023-08-24",
+        "sizeInKb": "58.12"
+      },
+      {
+        "name": "daily",
+        "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/112d782ab553a5d2269fb487e5a8753ae5f5c15f/air-quality/air-quality-daily.csv",
+        "version": "2023-08-24",
         "sizeInKb": "58.03"
       }
     ]
