@@ -112,7 +112,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 const size = getCSVFileSize(filePath);
                 const currentVersion = {
                     name: sanitizedSheetName,
-                    rawLinkLatest,
+                    rawLink: rawLinkLatest,
                     dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
                     size: size + " KB"
                 };
