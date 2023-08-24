@@ -5,7 +5,7 @@
         "name": "daily",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
         "version": "2023-08-24",
-        "sizeInKb": "58.03 KB"
+        "sizeInKb": "58.03"
       }
     ]
   },
@@ -15,7 +15,7 @@
         "name": "raw-data",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-data.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.54 KB"
+        "sizeInKb": "0.54"
       }
     ]
   },
@@ -25,19 +25,19 @@
         "name": "_update-here_-by-month",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.24 KB"
+        "sizeInKb": "0.24"
       },
       {
         "name": "_update-here_-by-month",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/7f6a0600091ecd87b8f2fb254e4aef8a61461eee/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.26 KB"
+        "sizeInKb": "0.26"
       },
       {
         "name": "_update-here_-by-month",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/027dfe06de674884ea832cec464e1c4e7f68ed53/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.24 KB"
+        "sizeInKb": "0.24"
       }
     ],
     "948552227": [
@@ -45,7 +45,7 @@
         "name": "_update-here_-by-day",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-day.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.12 KB"
+        "sizeInKb": "0.12"
       }
     ],
     "1993454060": [
@@ -53,7 +53,7 @@
         "name": "_update-here_-by-hour",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-hour.csv",
         "version": "2023-08-24",
-        "sizeInKb": "0.26 KB"
+        "sizeInKb": "0.26"
       }
     ]
   },
@@ -63,7 +63,7 @@
         "name": "formatted-data",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-formatted-data.csv",
         "version": "2023-08-24",
-        "sizeInKb": "208.88 KB"
+        "sizeInKb": "208.88"
       }
     ]
   },
@@ -73,7 +73,7 @@
         "name": "raw-data",
         "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/student-population/student-population-raw-data.csv",
         "version": "2023-08-24",
-        "sizeInKb": "2.27 KB"
+        "sizeInKb": "2.27"
       }
     ]
   }
