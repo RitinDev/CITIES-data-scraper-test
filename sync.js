@@ -1,6 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 const { google } = require('googleapis');
+const crypto = require('crypto');
 
 const fetchDataFromGithub = async (url) => {
     try {
@@ -50,7 +51,6 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey) => {
     }
 };
 
-
 const arrayToCSV = (data) => {
     return data.map(row => row.join(',')).join('\n');
 };
@@ -69,6 +69,12 @@ const saveDataToCSV = (data, path) => {
 const getCSVFileSize = (filePath) => {
     const stats = fs.statSync(filePath);
     return (stats.size / 1024).toFixed(2); // Size in kilobytes with 2 decimal places
+};
+
+const computeHash = (data) => {
+    const hash = crypto.createHash('sha256');
+    hash.update(data);
+    return hash.digest('hex');
 };
 
 const main = async (apiKey, databaseUrl) => {
@@ -112,17 +118,19 @@ const main = async (apiKey, databaseUrl) => {
             const rawLink = `https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/${project.id}/${fileName}`;
             const size = getCSVFileSize(filePath);
 
+            const currentHash = computeHash(csvData);
             const currentVersion = {
                 name: sanitizedSheetName,
                 rawLink,
                 dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                size: size + " KB"
+                size: size + " KB",
+                hash: currentHash
             };
 
             const datasetVersions = projectMetadata[dataset.gid] || [];
 
-            // Check if this version exists already, if not, append to the dataset versions
-            if (!datasetVersions.some(version => version.rawLink === currentVersion.rawLink)) {
+            // Check if this hash exists already for any version
+            if (!datasetVersions.some(version => version.hash === currentHash)) {
                 datasetVersions.push(currentVersion);
             }
 
