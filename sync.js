@@ -113,8 +113,8 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 const currentVersion = {
                     name: sanitizedSheetName,
                     rawLink: rawLinkLatest,
-                    dateCreated: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                    size: size + " KB"
+                    version: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
+                    sizeInKb: size
                 };
 
                 const datasetVersions = projectMetadata[dataset.gid] || [];
