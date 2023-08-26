@@ -75,6 +75,11 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
     }
 
     for (const project of database) {
+        if (!project.rawDataTables ||
+            project.rawDataTables.length === 0 ||
+            Object.keys(project.rawDataTables[0]).length === 0) continue;
+
+
         const projectPath = `./${project.id}`;
         if (!fs.existsSync(projectPath)) {
             fs.mkdirSync(projectPath);
