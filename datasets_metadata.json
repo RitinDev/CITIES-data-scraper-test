@@ -1,0 +1,89 @@
+{
+  "air-quality": [
+    {
+      "id": "584789045",
+      "versions": [
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-08-26",
+          "size": "58.22"
+        }
+      ]
+    }
+  ],
+  "athletics-fabs-membership": [
+    {
+      "id": "560722866",
+      "versions": [
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-data.csv",
+          "version": "2023-08-26",
+          "size": "0.54"
+        }
+      ]
+    }
+  ],
+  "athletic-facilities-check-in": [
+    {
+      "id": "1993454060",
+      "versions": [
+        {
+          "name": "_update-here_-by-hour",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-hour.csv",
+          "version": "2023-08-26",
+          "size": "0.26"
+        }
+      ]
+    },
+    {
+      "id": "948552227",
+      "versions": [
+        {
+          "name": "_update-here_-by-day",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-day.csv",
+          "version": "2023-08-26",
+          "size": "0.12"
+        }
+      ]
+    },
+    {
+      "id": "30903651",
+      "versions": [
+        {
+          "name": "_update-here_-by-month",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
+          "version": "2023-08-26",
+          "size": "0.24"
+        }
+      ]
+    }
+  ],
+  "food-waste": [
+    {
+      "id": "1952244844",
+      "versions": [
+        {
+          "name": "formatted-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-formatted-data.csv",
+          "version": "2023-08-26",
+          "size": "208.88"
+        }
+      ]
+    }
+  ],
+  "student-population": [
+    {
+      "id": "1622588326",
+      "versions": [
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/student-population/student-population-raw-data.csv",
+          "version": "2023-08-26",
+          "size": "2.27"
+        }
+      ]
+    }
+  ]
+}
