@@ -75,16 +75,12 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
     }
 
     for (const project of database) {
-        if (!project.rawDataTables ||
-            project.rawDataTables.length === 0 ||
-            Object.keys(project.rawDataTables[0]).length === 0) continue;
-
         const projectPath = `./${project.id}`;
         if (!fs.existsSync(projectPath)) {
             fs.mkdirSync(projectPath);
         }
 
-        const projectMetadata = metadata[project.id] || {};
+        const projectMetadata = metadata[project.id] || [];
 
         for (const dataset of project.rawDataTables) {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
@@ -114,18 +110,26 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                     name: sanitizedSheetName,
                     rawLink: rawLinkLatest,
                     version: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                    sizeInKb: size
+                    size: size
                 };
 
-                const datasetVersions = projectMetadata[dataset.gid] || [];
+                let datasetEntry = projectMetadata.find(entry => entry.id === dataset.gid.toString());
 
-                // If there is a previous version, update its rawLink to include the commit hash
-                if (datasetVersions.length > 0) {
-                    datasetVersions[0].rawLink = currentCommitRawLink;
+                if (!datasetEntry) {
+                    datasetEntry = {
+                        id: dataset.gid.toString(),
+                        versions: []
+                    };
+                    projectMetadata.push(datasetEntry);
                 }
-                datasetVersions.unshift(currentVersion);
 
-                projectMetadata[dataset.gid] = datasetVersions;
+                // If there's a previous version, update its rawLink to include the commit hash
+                if (datasetEntry.versions.length > 0) {
+                    datasetEntry.versions[0].rawLink = currentCommitRawLink;
+                }
+
+                // Prepend the new version
+                datasetEntry.versions.unshift(currentVersion);
             }
         }
 
