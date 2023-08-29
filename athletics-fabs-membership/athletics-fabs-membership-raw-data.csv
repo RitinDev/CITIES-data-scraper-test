@@ -4,5 +4,5 @@ AY19-20,41,,274,5,279,178,64,,598,1165,4,2608
 AY20-21,51,,22,,161,133,57,,142,1006,2,1574
 AY21-22,24,,72,,256,183,77,39,390,1734,6,2781
 AY22-23,51,48,282,9,330,340,104,37,525,2027,21,3774
-AY23-24 - up to Aug 2023,0,0,0,0,0,0,0,0,0,0,0,0
+AY23-24 - up to Aug 2023,26,13,109,0,169,128,62,20,285,707,8,1527
 *the last timestamp's format must be: "AYxx-xx, up to MMM YYYY", because this dataset is updated monthly, but the membership value is a yearly figure
