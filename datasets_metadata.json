@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-08-30",
+          "size": "58.57"
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/air-quality/air-quality-daily.csv",
           "version": "2023-08-29",
           "size": "58.48"
         },
@@ -28,6 +34,17 @@
           "size": "58.22"
         }
       ]
+    },
+    {
+      "id": "19993990",
+      "versions": [
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-08-30",
+          "size": "1491.74"
+        }
+      ]
     }
   ],
   "athletics-fabs-membership": [
@@ -35,8 +52,14 @@
       "id": "560722866",
       "versions": [
         {
+          "name": "raw-dataset",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
+          "version": "2023-08-30",
+          "size": "0.55"
+        },
+        {
           "name": "raw-data",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-data.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
           "version": "2023-08-29",
           "size": "0.55"
         },
@@ -47,6 +70,17 @@
           "size": "0.54"
         }
       ]
+    },
+    {
+      "id": "337720664",
+      "versions": [
+        {
+          "name": "transformed-dataset",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-transformed-dataset.csv",
+          "version": "2023-08-30",
+          "size": "4.08"
+        }
+      ]
     }
   ],
   "athletic-facilities-check-in": [
@@ -54,8 +88,14 @@
       "id": "1993454060",
       "versions": [
         {
+          "name": "by-hour",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
+          "version": "2023-08-30",
+          "size": "0.26"
+        },
+        {
           "name": "_update-here_-by-hour",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-hour.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
           "version": "2023-08-26",
           "size": "0.26"
         }
@@ -65,8 +105,14 @@
       "id": "948552227",
       "versions": [
         {
+          "name": "by-day",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-day.csv",
+          "version": "2023-08-30",
+          "size": "0.12"
+        },
+        {
           "name": "_update-here_-by-day",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-day.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/athletic-facilities-check-in/athletic-facilities-check-in-by-day.csv",
           "version": "2023-08-26",
           "size": "0.12"
         }
@@ -76,8 +122,14 @@
       "id": "30903651",
       "versions": [
         {
+          "name": "by-month",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
+          "version": "2023-08-30",
+          "size": "0.24"
+        },
+        {
           "name": "_update-here_-by-month",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-_update-here_-by-month.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
           "version": "2023-08-26",
           "size": "0.24"
         }
@@ -89,8 +141,14 @@
       "id": "1952244844",
       "versions": [
         {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-daily-food-waste-3-meals.csv",
+          "version": "2023-08-30",
+          "size": "208.88"
+        },
+        {
           "name": "formatted-data",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-formatted-data.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/food-waste/food-waste-daily-food-waste-3-meals.csv",
           "version": "2023-08-26",
           "size": "208.88"
         }
@@ -104,6 +162,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/student-population/student-population-raw-data.csv",
+          "version": "2023-08-30",
+          "size": "2.42"
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/3828c50e2d61b11ea0b935a7c4deb72fdf535913/student-population/student-population-raw-data.csv",
           "version": "2023-08-26",
           "size": "2.27"
         }
