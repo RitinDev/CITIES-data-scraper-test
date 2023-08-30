@@ -63,7 +63,7 @@ const computeHash = (data) => {
 
 const getCSVFileSize = (filePath) => {
     const stats = fs.statSync(filePath);
-    return (stats.size / 1024).toFixed(2); // Size in kilobytes with 2 decimal places
+    return stats.size;
 };
 
 const main = async (apiKey, databaseUrl, currentCommit) => {
@@ -115,7 +115,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                     name: sanitizedSheetName,
                     rawLink: rawLinkLatest,
                     version: new Date().toISOString().split('T')[0], // Only YYYY-MM-DD format
-                    size: size
+                    sizeInBytes: size
                 };
 
                 let datasetEntry = projectMetadata.find(entry => entry.id === dataset.gid.toString());
