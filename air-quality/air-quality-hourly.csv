@@ -21148,3 +21148,23 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-08-30 5:00,25.1,78,Moderate,1,,14.5,56,Moderate,1,,9.7,40,Good,0
 2023-08-30 6:00,28.8,86,Moderate,1,,10.8,45,Good,0,,15.6,58,Moderate,1
 2023-08-30 7:00,26.2,80,Moderate,1,,8.9,37,Good,0,,16.8,60,Moderate,1
+2023-08-30 8:00,27.6,83,Moderate,1,,8.6,35,Good,0,,13,52,Moderate,1
+2023-08-30 9:00,31.5,91,Moderate,1,,8.7,36,Good,0,,15.9,58,Moderate,1
+2023-08-30 10:00,29.4,87,Moderate,1,,9.1,37,Good,0,,25.7,79,Moderate,1
+2023-08-30 11:00,25.6,79,Moderate,1,,8.8,36,Good,0,,36.8,104,Unhealthy for Sensitive Groups,2
+2023-08-30 12:00,24.3,76,Moderate,1,,8.1,33,Good,0,,42.4,117,Unhealthy for Sensitive Groups,2
+2023-08-30 13:00,21,69,Moderate,1,,7.8,32,Good,0,,77.3,162,Unhealthy,3
+2023-08-30 14:00,25.4,78,Moderate,1,,7.6,31,Good,0,,35.2,99,Moderate,1
+2023-08-30 15:00,37.2,105,Unhealthy for Sensitive Groups,2,,7.5,31,Good,0,,23.4,74,Moderate,1
+2023-08-30 16:00,33.3,95,Moderate,1,,7.5,31,Good,0,,14.9,56,Moderate,1
+2023-08-30 17:00,33.1,95,Moderate,1,,7.7,32,Good,0,,28.7,85,Moderate,1
+2023-08-30 18:00,32.7,94,Moderate,1,,7.8,32,Good,0,,31.7,92,Moderate,1
+2023-08-30 19:00,36,102,Unhealthy for Sensitive Groups,2,,8.4,35,Good,0,,54.9,148,Unhealthy for Sensitive Groups,2
+2023-08-30 20:00,36.5,103,Unhealthy for Sensitive Groups,2,,8.9,37,Good,0,,51.8,141,Unhealthy for Sensitive Groups,2
+2023-08-30 21:00,32.2,93,Moderate,1,,8.2,34,Good,0,,30.3,89,Moderate,1
+2023-08-30 22:00,29.5,87,Moderate,1,,8.3,34,Good,0,,34.6,98,Moderate,1
+2023-08-30 23:00,29.5,87,Moderate,1,,8.7,36,Good,0,,14.6,56,Moderate,1
+2023-08-31 0:00,26.5,81,Moderate,1,,7.9,32,Good,0,,7.6,31,Good,0
+2023-08-31 1:00,22.7,73,Moderate,1,,7,29,Good,0,,6.6,27,Good,0
+2023-08-31 2:00,20.3,68,Moderate,1,,6.5,27,Good,0,,7.2,30,Good,0
+2023-08-31 3:00,21.2,70,Moderate,1,,6.5,27,Good,0,,8,33,Good,0
