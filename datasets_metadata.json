@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-09-02",
+          "sizeInBytes": 60198
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/a59ffcd70fbe1a158e2b96fb0681120b5096fd1e/air-quality/air-quality-daily.csv",
           "version": "2023-09-01",
           "sizeInBytes": 60105
         },
@@ -29,6 +35,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-09-02",
+          "sizeInBytes": 1533082
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/a59ffcd70fbe1a158e2b96fb0681120b5096fd1e/air-quality/air-quality-hourly.csv",
           "version": "2023-09-01",
           "sizeInBytes": 1531240
         },
@@ -54,6 +66,12 @@
         {
           "name": "raw-dataset",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
+          "version": "2023-09-02",
+          "sizeInBytes": 585
+        },
+        {
+          "name": "raw-dataset",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/a59ffcd70fbe1a158e2b96fb0681120b5096fd1e/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
           "version": "2023-08-30",
           "sizeInBytes": 583
         }
