@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-09-10",
+          "sizeInBytes": 60862
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/c4b1d892be05c71e0dcd673902a75eb3abc8b006/air-quality/air-quality-daily.csv",
           "version": "2023-09-09",
           "sizeInBytes": 60797
         },
@@ -77,6 +83,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-09-10",
+          "sizeInBytes": 1549359
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/c4b1d892be05c71e0dcd673902a75eb3abc8b006/air-quality/air-quality-hourly.csv",
           "version": "2023-09-09",
           "sizeInBytes": 1547330
         },
@@ -148,8 +160,14 @@
       "id": "560722866",
       "versions": [
         {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2023-09-10",
+          "sizeInBytes": 580
+        },
+        {
           "name": "raw-dataset",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/c4b1d892be05c71e0dcd673902a75eb3abc8b006/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-09-02",
           "sizeInBytes": 585
         },
@@ -165,8 +183,14 @@
       "id": "337720664",
       "versions": [
         {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2023-09-10",
+          "sizeInBytes": 3921
+        },
+        {
           "name": "transformed-dataset",
-          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-transformed-dataset.csv",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/c4b1d892be05c71e0dcd673902a75eb3abc8b006/athletics-fabs-membership/athletics-fabs-membership-transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-08-30",
           "sizeInBytes": 4207
         }
