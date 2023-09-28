@@ -21816,3 +21816,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-09-27 1:00,26.2,80,Moderate,1,,4.7,19,Good,0,,3.1,12,Good,0
 2023-09-27 2:00,21.5,70,Moderate,1,,4.4,18,Good,0,,2.8,11,Good,0
 2023-09-27 3:00,20.2,68,Moderate,1,,4,16,Good,0,,2.4,10,Good,0
+2023-09-27 4:00,18.8,65,Moderate,1,,3.7,15,Good,0,,1.9,7,Good,0
+2023-09-27 5:00,19.1,65,Moderate,1,,3.4,14,Good,0,,1.8,7,Good,0
+2023-09-27 6:00,19.2,65,Moderate,1,,2.5,10,Good,0,,1.9,7,Good,0
+2023-09-27 7:00,24.4,76,Moderate,1,,2.1,8,Good,0,,2.4,10,Good,0
+2023-09-27 8:00,30,88,Moderate,1,,2.6,10,Good,0,,3.5,14,Good,0
+2023-09-27 9:00,37.8,106,Unhealthy for Sensitive Groups,2,,3.5,14,Good,0,,5,20,Good,0
+2023-09-27 10:00,48.4,132,Unhealthy for Sensitive Groups,2,,3.5,14,Good,0,,3.9,16,Good,0
+2023-09-27 11:00,47,129,Unhealthy for Sensitive Groups,2,,4.1,17,Good,0,,7.9,32,Good,0
+2023-09-27 12:00,31.6,92,Moderate,1,,3.3,13,Good,0,,10.8,45,Good,0
+2023-09-27 13:00,23.9,75,Moderate,1,,3.5,14,Good,0,,8.8,36,Good,0
+2023-09-27 14:00,22.4,72,Moderate,1,,4.1,17,Good,0,,8.9,37,Good,0
+2023-09-27 15:00,33,94,Moderate,1,,4.5,18,Good,0,,3.6,15,Good,0
+2023-09-27 16:00,35.4,100,Moderate,1,,3.8,15,Good,0,,3.1,12,Good,0
+2023-09-27 17:00,44.8,123,Unhealthy for Sensitive Groups,2,,3.8,15,Good,0,,6.8,28,Good,0
+2023-09-27 18:00,40.8,114,Unhealthy for Sensitive Groups,2,,4,16,Good,0,,14.7,56,Moderate,1
+2023-09-27 19:00,36.6,103,Unhealthy for Sensitive Groups,2,,3.4,14,Good,0,,20.8,69,Moderate,1
+2023-09-27 20:00,39.5,110,Unhealthy for Sensitive Groups,2,,4.2,17,Good,0,,24.8,77,Moderate,1
+2023-09-27 21:00,38,107,Unhealthy for Sensitive Groups,2,,3.9,16,Good,0,,22.6,73,Moderate,1
+2023-09-27 22:00,32.6,94,Moderate,1,,3.2,13,Good,0,,4.7,19,Good,0
+2023-09-27 23:00,28.8,86,Moderate,1,,3.2,13,Good,0,,3.5,14,Good,0
+2023-09-28 0:00,26,80,Moderate,1,,3.1,12,Good,0,,3,12,Good,0
+2023-09-28 1:00,28,84,Moderate,1,,3.4,14,Good,0,,2.7,11,Good,0
+2023-09-28 2:00,26.1,80,Moderate,1,,3.6,15,Good,0,,2.7,11,Good,0
+2023-09-28 3:00,28.3,85,Moderate,1,,3.7,15,Good,0,,2.9,12,Good,0
