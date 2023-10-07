@@ -22032,3 +22032,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-10-06 1:00,46.4,127,Unhealthy for Sensitive Groups,2,,19.1,65,Moderate,1,,9,37,Good,0
 2023-10-06 2:00,41.6,116,Unhealthy for Sensitive Groups,2,,16.9,61,Moderate,1,,8,33,Good,0
 2023-10-06 3:00,38,107,Unhealthy for Sensitive Groups,2,,14.7,56,Moderate,1,,7.3,30,Good,0
+2023-10-06 4:00,36.8,104,Unhealthy for Sensitive Groups,2,,13,52,Moderate,1,,5.9,24,Good,0
+2023-10-06 5:00,41.1,114,Unhealthy for Sensitive Groups,2,,12,50,Good,0,,5,20,Good,0
+2023-10-06 6:00,41.5,115,Unhealthy for Sensitive Groups,2,,10,41,Good,0,,5.2,21,Good,0
+2023-10-06 7:00,42.5,118,Unhealthy for Sensitive Groups,2,,8,33,Good,0,,7.3,30,Good,0
+2023-10-06 8:00,44.7,123,Unhealthy for Sensitive Groups,2,,8.8,36,Good,0,,10,41,Good,0
+2023-10-06 9:00,43.9,121,Unhealthy for Sensitive Groups,2,,8.9,37,Good,0,,11.9,49,Good,0
+2023-10-06 10:00,53.2,144,Unhealthy for Sensitive Groups,2,,8.8,36,Good,0,,7.7,32,Good,0
+2023-10-06 11:00,33.1,95,Moderate,1,,7.4,30,Good,0,,8.6,35,Good,0
+2023-10-06 12:00,28.8,86,Moderate,1,,6.5,27,Good,0,,17.8,62,Moderate,1
+2023-10-06 13:00,30,88,Moderate,1,,7,29,Good,0,,16.6,60,Moderate,1
+2023-10-06 14:00,29.6,87,Moderate,1,,7.5,31,Good,0,,14.8,56,Moderate,1
+2023-10-06 15:00,27.1,82,Moderate,1,,5.7,23,Good,0,,9.5,39,Good,0
+2023-10-06 16:00,28.1,84,Moderate,1,,4.8,20,Good,0,,10.6,44,Good,0
+2023-10-06 17:00,25.9,80,Moderate,1,,4.6,19,Good,0,,15.1,57,Moderate,1
+2023-10-06 18:00,26.2,80,Moderate,1,,4.9,20,Good,0,,17.6,62,Moderate,1
+2023-10-06 19:00,26.8,81,Moderate,1,,5.5,22,Good,0,,21.9,71,Moderate,1
+2023-10-06 20:00,27.3,82,Moderate,1,,6.1,25,Good,0,,35.5,101,Unhealthy for Sensitive Groups,2
+2023-10-06 21:00,27,82,Moderate,1,,5,20,Good,0,,28.9,86,Moderate,1
+2023-10-06 22:00,29.5,87,Moderate,1,,4.9,20,Good,0,,26.3,80,Moderate,1
+2023-10-06 23:00,30.1,88,Moderate,1,,5.1,21,Good,0,,10.5,43,Good,0
+2023-10-07 0:00,29.2,86,Moderate,1,,4.7,19,Good,0,,5.6,23,Good,0
+2023-10-07 1:00,26.7,81,Moderate,1,,4.8,20,Good,0,,2.6,10,Good,0
+2023-10-07 2:00,29.1,86,Moderate,1,,4.7,19,Good,0,,2.3,9,Good,0
+2023-10-07 3:00,26.6,81,Moderate,1,,5.1,21,Good,0,,2.5,10,Good,0
