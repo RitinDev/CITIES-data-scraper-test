@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-10-13",
+          "sizeInBytes": 63421
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/305154a32702242702d5f9df9dc1d4e0ed35f2c8/air-quality/air-quality-daily.csv",
           "version": "2023-10-12",
           "sizeInBytes": 63328
         },
@@ -275,6 +281,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-10-13",
+          "sizeInBytes": 1613206
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/305154a32702242702d5f9df9dc1d4e0ed35f2c8/air-quality/air-quality-hourly.csv",
           "version": "2023-10-12",
           "sizeInBytes": 1611300
         },
@@ -546,6 +558,12 @@
         {
           "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2023-10-13",
+          "sizeInBytes": 579
+        },
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/305154a32702242702d5f9df9dc1d4e0ed35f2c8/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-10-09",
           "sizeInBytes": 580
         },
