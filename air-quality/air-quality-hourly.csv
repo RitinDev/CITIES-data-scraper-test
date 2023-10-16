@@ -22248,3 +22248,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-10-15 1:00,65.1,155,Unhealthy,3,,27.5,83,Moderate,1,,12.5,51,Moderate,1
 2023-10-15 2:00,71.8,159,Unhealthy,3,,26.4,81,Moderate,1,,12,50,Good,0
 2023-10-15 3:00,66.5,156,Unhealthy,3,,26.5,81,Moderate,1,,11.2,46,Good,0
+2023-10-15 4:00,66.5,156,Unhealthy,3,,26.9,82,Moderate,1,,10.7,44,Good,0
+2023-10-15 5:00,67,156,Unhealthy,3,,27.9,84,Moderate,1,,12,50,Good,0
+2023-10-15 6:00,70.4,158,Unhealthy,3,,22.3,72,Moderate,1,,11.3,47,Good,0
+2023-10-15 7:00,83.6,165,Unhealthy,3,,18.8,65,Moderate,1,,12.8,52,Moderate,1
+2023-10-15 8:00,77.9,162,Unhealthy,3,,18.2,63,Moderate,1,,12.9,52,Moderate,1
+2023-10-15 9:00,77.9,162,Unhealthy,3,,18,63,Moderate,1,,22.1,72,Moderate,1
+2023-10-15 10:00,73.8,160,Unhealthy,3,,19.6,66,Moderate,1,,14.7,56,Moderate,1
+2023-10-15 11:00,79.6,163,Unhealthy,3,,21.5,70,Moderate,1,,16.6,60,Moderate,1
+2023-10-15 12:00,84,165,Unhealthy,3,,21.3,70,Moderate,1,,23.2,74,Moderate,1
+2023-10-15 13:00,80.8,164,Unhealthy,3,,21.2,70,Moderate,1,,28.5,85,Moderate,1
+2023-10-15 14:00,83.7,165,Unhealthy,3,,23.4,74,Moderate,1,,23.4,74,Moderate,1
+2023-10-15 15:00,85.7,166,Unhealthy,3,,24.3,76,Moderate,1,,20,67,Moderate,1
+2023-10-15 16:00,80.6,163,Unhealthy,3,,23.2,74,Moderate,1,,15.9,58,Moderate,1
+2023-10-15 17:00,73.2,160,Unhealthy,3,,22.6,73,Moderate,1,,19,65,Moderate,1
+2023-10-15 18:00,74.1,160,Unhealthy,3,,23.7,75,Moderate,1,,25.2,78,Moderate,1
+2023-10-15 19:00,78.8,163,Unhealthy,3,,26.1,80,Moderate,1,,44,121,Unhealthy for Sensitive Groups,2
+2023-10-15 20:00,70,158,Unhealthy,3,,27.5,83,Moderate,1,,44.1,122,Unhealthy for Sensitive Groups,2
+2023-10-15 21:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-15 22:00,60.3,153,Unhealthy,3,,,,No Data,-1,,,,No Data,-1
+2023-10-15 23:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 0:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 1:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 2:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 3:00,59,152,Unhealthy,3,,,,No Data,-1,,,,No Data,-1
