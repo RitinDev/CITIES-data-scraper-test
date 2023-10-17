@@ -22272,3 +22272,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-10-16 1:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
 2023-10-16 2:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
 2023-10-16 3:00,59,152,Unhealthy,3,,,,No Data,-1,,,,No Data,-1
+2023-10-16 4:00,57.5,152,Unhealthy,3,,,,No Data,-1,,10.6,44,Good,0
+2023-10-16 5:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 6:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 7:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 8:00,,,No Data,-1,,,,No Data,-1,,,,No Data,-1
+2023-10-16 9:00,77.4,162,Unhealthy,3,,19.2,65,Moderate,1,,21.2,70,Moderate,1
+2023-10-16 10:00,84.8,166,Unhealthy,3,,21.6,70,Moderate,1,,21,69,Moderate,1
+2023-10-16 11:00,86.1,166,Unhealthy,3,,25.8,79,Moderate,1,,26.4,81,Moderate,1
+2023-10-16 12:00,77.8,162,Unhealthy,3,,25.6,79,Moderate,1,,29.4,87,Moderate,1
+2023-10-16 13:00,63,154,Unhealthy,3,,25,78,Moderate,1,,26.1,80,Moderate,1
+2023-10-16 14:00,63.3,155,Unhealthy,3,,22.9,73,Moderate,1,,19.5,66,Moderate,1
+2023-10-16 15:00,75,161,Unhealthy,3,,24.3,76,Moderate,1,,19,65,Moderate,1
+2023-10-16 16:00,74.7,160,Unhealthy,3,,23.9,75,Moderate,1,,17.1,61,Moderate,1
+2023-10-16 17:00,77.6,162,Unhealthy,3,,22.5,72,Moderate,1,,21,69,Moderate,1
+2023-10-16 18:00,82.2,164,Unhealthy,3,,24.1,76,Moderate,1,,32.7,94,Moderate,1
+2023-10-16 19:00,77.5,162,Unhealthy,3,,27.5,83,Moderate,1,,41.9,116,Unhealthy for Sensitive Groups,2
+2023-10-16 20:00,75.4,161,Unhealthy,3,,26,80,Moderate,1,,47.2,129,Unhealthy for Sensitive Groups,2
+2023-10-16 21:00,78.5,162,Unhealthy,3,,26.1,80,Moderate,1,,31.4,91,Moderate,1
+2023-10-16 22:00,84.3,165,Unhealthy,3,,26,80,Moderate,1,,24.3,76,Moderate,1
+2023-10-16 23:00,88.4,167,Unhealthy,3,,28.5,85,Moderate,1,,23.2,74,Moderate,1
+2023-10-17 0:00,87.3,167,Unhealthy,3,,30.6,89,Moderate,1,,18.7,64,Moderate,1
+2023-10-17 1:00,86.3,166,Unhealthy,3,,31.8,92,Moderate,1,,17.8,62,Moderate,1
+2023-10-17 2:00,83.6,165,Unhealthy,3,,31.1,90,Moderate,1,,14.8,56,Moderate,1
+2023-10-17 3:00,78.7,162,Unhealthy,3,,28.4,85,Moderate,1,,13.4,53,Moderate,1
