@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-daily.csv",
+          "version": "2023-10-19",
+          "sizeInBytes": 63866
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/80f15ba27240d15ad3fad8df9214f2d39a2c1ee0/air-quality/air-quality-daily.csv",
           "version": "2023-10-18",
           "sizeInBytes": 63796
         },
@@ -311,6 +317,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-10-19",
+          "sizeInBytes": 1624382
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/80f15ba27240d15ad3fad8df9214f2d39a2c1ee0/air-quality/air-quality-hourly.csv",
           "version": "2023-10-18",
           "sizeInBytes": 1622531
         },
@@ -731,6 +743,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-daily-food-waste-3-meals.csv",
+          "version": "2023-10-19",
+          "sizeInBytes": 225734
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/80f15ba27240d15ad3fad8df9214f2d39a2c1ee0/food-waste/food-waste-daily-food-waste-3-meals.csv",
           "version": "2023-08-30",
           "sizeInBytes": 213894
         }
