@@ -22440,3 +22440,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-10-23 1:00,81,164,Unhealthy,3,,23.8,75,Moderate,1,,17,61,Moderate,1
 2023-10-23 2:00,74.5,160,Unhealthy,3,,21.1,69,Moderate,1,,13.6,54,Moderate,1
 2023-10-23 3:00,65.1,155,Unhealthy,3,,18.3,64,Moderate,1,,12.2,51,Moderate,1
+2023-10-23 4:00,56.5,151,Unhealthy,3,,16.8,60,Moderate,1,,11.6,48,Good,0
+2023-10-23 5:00,63,154,Unhealthy,3,,16.1,59,Moderate,1,,11.6,48,Good,0
+2023-10-23 6:00,59.8,153,Unhealthy,3,,13.8,54,Moderate,1,,12.2,51,Moderate,1
+2023-10-23 7:00,64,155,Unhealthy,3,,11.4,47,Good,0,,14.5,56,Moderate,1
+2023-10-23 8:00,59.5,153,Unhealthy,3,,11.4,47,Good,0,,23.2,74,Moderate,1
+2023-10-23 9:00,61.9,154,Unhealthy,3,,12.6,52,Moderate,1,,22,71,Moderate,1
+2023-10-23 10:00,60.5,153,Unhealthy,3,,11.7,48,Good,0,,24.4,76,Moderate,1
+2023-10-23 11:00,60.4,153,Unhealthy,3,,11.1,46,Good,0,,18.1,63,Moderate,1
+2023-10-23 12:00,68.2,157,Unhealthy,3,,11.4,47,Good,0,,21.5,70,Moderate,1
+2023-10-23 13:00,65.5,156,Unhealthy,3,,12.6,52,Moderate,1,,25.5,79,Moderate,1
+2023-10-23 14:00,69.3,158,Unhealthy,3,,14.5,56,Moderate,1,,27.9,84,Moderate,1
+2023-10-23 15:00,71.5,159,Unhealthy,3,,15.7,58,Moderate,1,,19.5,66,Moderate,1
+2023-10-23 16:00,72.8,159,Unhealthy,3,,16.1,59,Moderate,1,,18.1,63,Moderate,1
+2023-10-23 17:00,71.5,159,Unhealthy,3,,15.3,57,Moderate,1,,29,86,Moderate,1
+2023-10-23 18:00,67.1,156,Unhealthy,3,,15.6,58,Moderate,1,,30.7,90,Moderate,1
+2023-10-23 19:00,65.9,156,Unhealthy,3,,17.7,62,Moderate,1,,24.4,76,Moderate,1
+2023-10-23 20:00,57.8,152,Unhealthy,3,,17,61,Moderate,1,,27.7,83,Moderate,1
+2023-10-23 21:00,68.3,157,Unhealthy,3,,15.1,57,Moderate,1,,37.4,105,Unhealthy for Sensitive Groups,2
+2023-10-23 22:00,74.4,160,Unhealthy,3,,14.8,56,Moderate,1,,38.4,108,Unhealthy for Sensitive Groups,2
+2023-10-23 23:00,75.7,161,Unhealthy,3,,15.9,58,Moderate,1,,23.8,75,Moderate,1
+2023-10-24 0:00,75.6,161,Unhealthy,3,,18.4,64,Moderate,1,,19.2,65,Moderate,1
+2023-10-24 1:00,72.5,159,Unhealthy,3,,19.3,66,Moderate,1,,14.5,56,Moderate,1
+2023-10-24 2:00,69.7,158,Unhealthy,3,,18.7,64,Moderate,1,,13.5,53,Moderate,1
+2023-10-24 3:00,75,161,Unhealthy,3,,18.6,64,Moderate,1,,13.4,53,Moderate,1
