@@ -944,3 +944,4 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-10-31,34.3,97,Moderate,1,,8,33,Good,0,,14.3,55,Moderate,1
 2023-11-01,29,86,Moderate,1,,7.4,30,Good,0,,13.4,53,Moderate,1
 2023-11-02,36,102,Unhealthy for Sensitive Groups,2,,7.2,30,Good,0,,13.5,53,Moderate,1
+2023-11-03,45.6,125,Unhealthy for Sensitive Groups,2,,10.5,43,Good,0,,15.8,58,Moderate,1
