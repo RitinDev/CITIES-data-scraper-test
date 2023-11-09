@@ -22824,3 +22824,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-11-08 1:00,31.7,92,Moderate,1,,14.2,55,Moderate,1,,13.2,53,Moderate,1
 2023-11-08 2:00,30.1,88,Moderate,1,,14.3,55,Moderate,1,,13.1,53,Moderate,1
 2023-11-08 3:00,27.6,83,Moderate,1,,13.6,54,Moderate,1,,12.6,52,Moderate,1
+2023-11-08 4:00,26.6,81,Moderate,1,,14,54,Moderate,1,,11.9,49,Good,0
+2023-11-08 5:00,26.4,81,Moderate,1,,14.2,55,Moderate,1,,11.6,48,Good,0
+2023-11-08 6:00,34,97,Moderate,1,,11.7,48,Good,0,,11.8,49,Good,0
+2023-11-08 7:00,44,121,Unhealthy for Sensitive Groups,2,,9.7,40,Good,0,,14.5,56,Moderate,1
+2023-11-08 8:00,43.5,120,Unhealthy for Sensitive Groups,2,,8.8,36,Good,0,,28.7,85,Moderate,1
+2023-11-08 9:00,38.2,107,Unhealthy for Sensitive Groups,2,,9.5,39,Good,0,,27.6,83,Moderate,1
+2023-11-08 10:00,45,124,Unhealthy for Sensitive Groups,2,,13,52,Moderate,1,,22.8,73,Moderate,1
+2023-11-08 11:00,45.6,125,Unhealthy for Sensitive Groups,2,,11.6,48,Good,0,,21.8,71,Moderate,1
+2023-11-08 12:00,36.1,102,Unhealthy for Sensitive Groups,2,,11.5,47,Good,0,,29.1,86,Moderate,1
+2023-11-08 13:00,34.5,98,Moderate,1,,12.1,51,Moderate,1,,23.5,74,Moderate,1
+2023-11-08 14:00,34.4,97,Moderate,1,,12.7,52,Moderate,1,,23.7,75,Moderate,1
+2023-11-08 15:00,35.7,101,Unhealthy for Sensitive Groups,2,,11.4,47,Good,0,,16.3,59,Moderate,1
+2023-11-08 16:00,35.3,99,Moderate,1,,10.8,45,Good,0,,14.1,55,Moderate,1
+2023-11-08 17:00,34.2,97,Moderate,1,,10.6,44,Good,0,,16.3,59,Moderate,1
+2023-11-08 18:00,33.8,96,Moderate,1,,11.2,46,Good,0,,17.3,61,Moderate,1
+2023-11-08 19:00,34.1,97,Moderate,1,,12.8,52,Moderate,1,,25.8,79,Moderate,1
+2023-11-08 20:00,41.6,116,Unhealthy for Sensitive Groups,2,,14.4,55,Moderate,1,,30.9,90,Moderate,1
+2023-11-08 21:00,44.5,123,Unhealthy for Sensitive Groups,2,,13.7,54,Moderate,1,,22.6,73,Moderate,1
+2023-11-08 22:00,45.5,125,Unhealthy for Sensitive Groups,2,,13,52,Moderate,1,,15.4,57,Moderate,1
+2023-11-08 23:00,50.2,137,Unhealthy for Sensitive Groups,2,,14.7,56,Moderate,1,,15.2,57,Moderate,1
+2023-11-09 0:00,53.3,144,Unhealthy for Sensitive Groups,2,,15.4,57,Moderate,1,,14.4,55,Moderate,1
+2023-11-09 1:00,52.8,143,Unhealthy for Sensitive Groups,2,,16.3,59,Moderate,1,,14,54,Moderate,1
+2023-11-09 2:00,54.3,147,Unhealthy for Sensitive Groups,2,,16.7,60,Moderate,1,,13.3,53,Moderate,1
+2023-11-09 3:00,60.3,153,Unhealthy,3,,17.1,61,Moderate,1,,13.7,54,Moderate,1
