@@ -23160,3 +23160,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-11-22 1:00,86.4,166,Unhealthy,3,,15.2,57,Moderate,1,,15.1,57,Moderate,1
 2023-11-22 2:00,100.5,174,Unhealthy,3,,15.9,58,Moderate,1,,14.8,56,Moderate,1
 2023-11-22 3:00,115.3,181,Unhealthy,3,,17.2,61,Moderate,1,,17.1,61,Moderate,1
+2023-11-22 4:00,109.3,178,Unhealthy,3,,18.2,63,Moderate,1,,18.5,64,Moderate,1
+2023-11-22 5:00,113.2,180,Unhealthy,3,,18.9,65,Moderate,1,,20.1,67,Moderate,1
+2023-11-22 6:00,114.7,181,Unhealthy,3,,17.3,61,Moderate,1,,20.6,68,Moderate,1
+2023-11-22 7:00,116.8,182,Unhealthy,3,,15.2,57,Moderate,1,,23.9,75,Moderate,1
+2023-11-22 8:00,103.9,175,Unhealthy,3,,14.9,56,Moderate,1,,24.4,76,Moderate,1
+2023-11-22 9:00,82.2,164,Unhealthy,3,,15.2,57,Moderate,1,,23.2,74,Moderate,1
+2023-11-22 10:00,70.8,158,Unhealthy,3,,17.2,61,Moderate,1,,21.5,70,Moderate,1
+2023-11-22 11:00,66.4,156,Unhealthy,3,,14.1,55,Moderate,1,,18.3,64,Moderate,1
+2023-11-22 12:00,80.8,164,Unhealthy,3,,12.6,52,Moderate,1,,25.3,78,Moderate,1
+2023-11-22 13:00,88.5,168,Unhealthy,3,,13.4,53,Moderate,1,,28.4,85,Moderate,1
+2023-11-22 14:00,84.2,165,Unhealthy,3,,14.2,55,Moderate,1,,28.4,85,Moderate,1
+2023-11-22 15:00,42.8,118,Unhealthy for Sensitive Groups,2,,12.3,51,Moderate,1,,18.7,64,Moderate,1
+2023-11-22 16:00,44.7,123,Unhealthy for Sensitive Groups,2,,10.9,45,Good,0,,15.5,58,Moderate,1
+2023-11-22 17:00,44.2,122,Unhealthy for Sensitive Groups,2,,10.7,44,Good,0,,26.2,80,Moderate,1
+2023-11-22 18:00,51.8,141,Unhealthy for Sensitive Groups,2,,12.2,51,Moderate,1,,41.1,114,Unhealthy for Sensitive Groups,2
+2023-11-22 19:00,42.5,118,Unhealthy for Sensitive Groups,2,,14.3,55,Moderate,1,,55.5,151,Unhealthy,3
+2023-11-22 20:00,28.7,85,Moderate,1,,14.2,55,Moderate,1,,36.8,104,Unhealthy for Sensitive Groups,2
+2023-11-22 21:00,22.4,72,Moderate,1,,9.8,40,Good,0,,29.6,87,Moderate,1
+2023-11-22 22:00,24.5,77,Moderate,1,,6.7,27,Good,0,,17.7,62,Moderate,1
+2023-11-22 23:00,26.8,81,Moderate,1,,5.5,22,Good,0,,7.3,30,Good,0
+2023-11-23 0:00,29.9,88,Moderate,1,,4.7,19,Good,0,,5,20,Good,0
+2023-11-23 1:00,29.8,88,Moderate,1,,4.3,17,Good,0,,3.6,15,Good,0
+2023-11-23 2:00,30,88,Moderate,1,,4.4,18,Good,0,,3.5,14,Good,0
+2023-11-23 3:00,35.2,99,Moderate,1,,4.2,17,Good,0,,3.1,12,Good,0
