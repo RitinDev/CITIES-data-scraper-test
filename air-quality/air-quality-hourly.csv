@@ -23784,3 +23784,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,outdoor_categor
 2023-12-18 1:00,12,50,Good,0,,2.6,10,Good,0,,7.3,30,Good,0
 2023-12-18 2:00,12.7,52,Moderate,1,,2.5,10,Good,0,,2.7,11,Good,0
 2023-12-18 3:00,11.4,47,Good,0,,2.6,10,Good,0,,2.2,9,Good,0
+2023-12-18 4:00,9.5,39,Good,0,,3.7,15,Good,0,,1.8,7,Good,0
+2023-12-18 5:00,7.8,32,Good,0,,2.4,10,Good,0,,1.6,6,Good,0
+2023-12-18 6:00,7.5,31,Good,0,,1.7,7,Good,0,,8.7,36,Good,0
+2023-12-18 7:00,10.3,42,Good,0,,1.5,6,Good,0,,11.5,47,Good,0
+2023-12-18 8:00,13.4,53,Moderate,1,,1.7,7,Good,0,,10.4,43,Good,0
+2023-12-18 9:00,18.8,65,Moderate,1,,2,8,Good,0,,9.9,41,Good,0
+2023-12-18 10:00,17.1,61,Moderate,1,,2.2,9,Good,0,,25.2,78,Moderate,1
+2023-12-18 11:00,13.4,53,Moderate,1,,1.9,7,Good,0,,36.9,104,Unhealthy for Sensitive Groups,2
+2023-12-18 12:00,14,54,Moderate,1,,2.4,10,Good,0,,44.6,123,Unhealthy for Sensitive Groups,2
+2023-12-18 13:00,12.1,51,Moderate,1,,3.3,13,Good,0,,52.3,142,Unhealthy for Sensitive Groups,2
+2023-12-18 14:00,14.2,55,Moderate,1,,3.3,13,Good,0,,77.5,162,Unhealthy,3
+2023-12-18 15:00,10.6,44,Good,0,,2.9,12,Good,0,,47,129,Unhealthy for Sensitive Groups,2
+2023-12-18 16:00,11,45,Good,0,,2.9,12,Good,0,,11.8,49,Good,0
+2023-12-18 17:00,12.5,51,Moderate,1,,2.8,11,Good,0,,40,112,Unhealthy for Sensitive Groups,2
+2023-12-18 18:00,13.4,53,Moderate,1,,3.8,15,Good,0,,74.8,160,Unhealthy,3
+2023-12-18 19:00,14.3,55,Moderate,1,,5.3,22,Good,0,,111.8,180,Unhealthy,3
+2023-12-18 20:00,12.5,51,Moderate,1,,6.4,26,Good,0,,64.7,155,Unhealthy,3
+2023-12-18 21:00,13,52,Moderate,1,,4.4,18,Good,0,,104.6,176,Unhealthy,3
+2023-12-18 22:00,15.7,58,Moderate,1,,3.9,16,Good,0,,225.3,275,Very Unhealthy,4
+2023-12-18 23:00,15.2,57,Moderate,1,,4.3,17,Good,0,,61.8,154,Unhealthy,3
+2023-12-19 0:00,17,61,Moderate,1,,4.5,18,Good,0,,29.5,87,Moderate,1
+2023-12-19 1:00,18,63,Moderate,1,,4.3,17,Good,0,,8.8,36,Good,0
+2023-12-19 2:00,17.5,62,Moderate,1,,4.8,20,Good,0,,5.4,22,Good,0
+2023-12-19 3:00,18.7,64,Moderate,1,,5.1,21,Good,0,,5.8,24,Good,0
