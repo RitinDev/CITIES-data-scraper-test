@@ -1475,6 +1475,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/food-waste/food-waste-daily-food-waste-3-meals.csv",
+          "version": "2024-04-06",
+          "sizeInBytes": 270836
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/6f8cc5a3045fcd50b9b0905c3ff09228b0d0a215/food-waste/food-waste-daily-food-waste-3-meals.csv",
           "version": "2024-02-02",
           "sizeInBytes": 256015
         },
