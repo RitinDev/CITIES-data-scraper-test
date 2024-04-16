@@ -1362,6 +1362,12 @@
         {
           "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2024-04-16",
+          "sizeInBytes": 573
+        },
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/ce6d3b2dc04fcdb6bd45403bdb144ad6a541cf45/athletics-fabs-membership/athletics-fabs-membership-raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-10-13",
           "sizeInBytes": 579
         },
@@ -1397,6 +1403,12 @@
         {
           "name": "transformed-_regrouped-to-4-demographic-groups_",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletics-fabs-membership/athletics-fabs-membership-transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2024-04-16",
+          "sizeInBytes": 3610
+        },
+        {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/ce6d3b2dc04fcdb6bd45403bdb144ad6a541cf45/athletics-fabs-membership/athletics-fabs-membership-transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-10-09",
           "sizeInBytes": 3603
         },
@@ -1531,6 +1543,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/printing-and-copying/printing-and-copying-raw-data.csv",
+          "version": "2024-04-16",
+          "sizeInBytes": 4489121
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/ce6d3b2dc04fcdb6bd45403bdb144ad6a541cf45/printing-and-copying/printing-and-copying-raw-data.csv",
           "version": "2024-03-21",
           "sizeInBytes": 4356856
         },
