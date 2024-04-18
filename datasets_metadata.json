@@ -1434,6 +1434,12 @@
         {
           "name": "by-hour",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
+          "version": "2024-04-18",
+          "sizeInBytes": 383
+        },
+        {
+          "name": "by-hour",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/77d75220397865a2f2e048607cf50b2454c6899b/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
           "version": "2023-10-09",
           "sizeInBytes": 346
         },
@@ -1451,6 +1457,12 @@
         {
           "name": "by-day",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-day.csv",
+          "version": "2024-04-18",
+          "sizeInBytes": 202
+        },
+        {
+          "name": "by-day",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/77d75220397865a2f2e048607cf50b2454c6899b/athletic-facilities-check-in/athletic-facilities-check-in-by-day.csv",
           "version": "2023-10-09",
           "sizeInBytes": 156
         },
@@ -1468,6 +1480,12 @@
         {
           "name": "by-month",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
+          "version": "2024-04-18",
+          "sizeInBytes": 348
+        },
+        {
+          "name": "by-month",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/77d75220397865a2f2e048607cf50b2454c6899b/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
           "version": "2023-10-09",
           "sizeInBytes": 297
         },
