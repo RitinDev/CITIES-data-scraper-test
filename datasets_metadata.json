@@ -1567,6 +1567,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/main/printing-and-copying/printing-and-copying-raw-data.csv",
+          "version": "2024-06-03",
+          "sizeInBytes": 5024712
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/RitinDev/CITIES-data-scraper-test/1bbd29bab68acd025233bbb8b557e86889107a3f/printing-and-copying/printing-and-copying-raw-data.csv",
           "version": "2024-05-02",
           "sizeInBytes": 4766408
         },
